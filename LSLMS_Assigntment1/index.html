@@ -10,13 +10,15 @@
         <input type="text" ng-model="CalCtr.cal.firstNumber"  required /><br /><br />
         Second Number:
         <input type="text" ng-model="CalCtr.cal.secondNumber" required /><br /><br />
-        Result :
-        <input type="text" ng-model="CalCtr.result" readonly /><br /><br />
-
         <input type="submit" ng-click="CalCtr.getAdditionResult()" value="ADD" />
         <input type="submit" ng-click="CalCtr.getSubResult()" value="Substraction" />
         <input type="submit" ng-click="CalCtr.getMultiResult()" value="Multiplication" />
         <input type="submit" ng-click="CalCtr.getDivisionResult()" value="Divide" />
+        <br /><br/>
+        Result :
+        <input type="text" ng-model="CalCtr.result" readonly /><br /><br />
+
+       
     </form>
 
     <script src="Scripts/angular.js"></script>
