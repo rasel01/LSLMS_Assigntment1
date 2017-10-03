@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Simple Calculator</title>
+</head>
+<body ng-controller="CalculatorController as CalCtr">
+    <form>
+        First Number:
+        <input type="text" ng-model="CalCtr.cal.firstNumber"  required /><br /><br />
+        Second Number:
+        <input type="text" ng-model="CalCtr.cal.secondNumber" required /><br /><br />
+        Result :
+        <input type="text" ng-model="CalCtr.result" readonly /><br /><br />
+
+        <input type="submit" ng-click="CalCtr.getAdditionResult()" value="ADD" />
+        <input type="submit" ng-click="CalCtr.getSubResult()" value="Substraction" />
+        <input type="submit" ng-click="CalCtr.getMultiResult()" value="Multiplication" />
+        <input type="submit" ng-click="CalCtr.getDivisionResult()" value="Divide" />
+    </form>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
